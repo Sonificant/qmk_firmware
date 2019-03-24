@@ -43,23 +43,25 @@ $ make tada68:default:flashbin
 $ make tada68:default:flashbin
 ```
 
-2) Connect your keyboard to your Mac, hit the reset button on the bottom of the TADA, the lights will start flashing.
+2) Rename the created .bin file to `FLASH.bin`
 
-3) You'll see a new drive on your computer called TADA68. Backup the original factory `FLASH.BIN` file that's inside it.
+3) Connect your keyboard to your Mac, hit the reset button on the bottom of the TADA, the lights will start flashing.
 
-4) Open the terminal and cd to the folder where the keyboard has been mounted
+4) You'll see a new drive on your computer called TADA68. Backup the original factory `FLASH.BIN` file that's inside it.
 
-`cd /Volumes/TADA68\ /`
+5) Open the terminal and cd to the folder where the keyboard has been mounted
 
-5) Copy over your new firmware to the keyboard
+`cd /Volumes/TADA68\ \ /`
+
+6) Copy over your new firmware to the keyboard
 
 `cp -r <path to your qmk_firmware folder>/FLASH.bin .`
 
-6) Remove files that MacOS automatically created which interfere with the keyboard
+7) Remove files that MacOS automatically created which interfere with the keyboard
 
 `rm -fr .Trashes/ .fseventsd/ ._.Trashes ._FLASH.bin`
 
-7) Eject the USB device or hit ESC on the keyboard. The lights will stop flashing and your firmware is loaded!
+8) Eject the USB device or hit ESC on the keyboard. The lights will stop flashing and your firmware is loaded!
 
 ## Flashing Instructions (Linux)
 
